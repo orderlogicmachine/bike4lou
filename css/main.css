@@ -133,7 +133,7 @@ ul.grid
     width: 100%;
     height: 100%;
     background-color: #414A4F;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .hero h1
@@ -280,21 +280,3 @@ figure
         height: 500px;
     }
 }
-
-/* main {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: column;
-}
-
-main > div {
-    display: flex;
-    padding: 5px;
-    justify-content: space-between;
-}
-
-
-
-img {
-    width: auto;
-} */
