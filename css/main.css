@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 /* .grid-wrap
@@ -43,7 +44,6 @@ body
     min-height: 100vh;
     font-family: Helvetica, 'Segoe IU', sans-serif;
     text-align: center;
-    width: 100%;
 }
 
 a
@@ -148,7 +148,7 @@ a:hover
     width: 100%;
 }
 
-@media(max-width: 800px) 
+/* @media(max-width: 800px) 
 {
     .hero
     {
@@ -159,7 +159,7 @@ a:hover
     {
         font-size: 36px;
     }
-}
+} */
 
 .about
 {
@@ -170,6 +170,11 @@ a:hover
 {
     display: flex;
     flex-direction: column;
+}
+
+.flex-container .card
+{
+    padding: 1rem;
 }
 
 /* .about .grid li
@@ -185,13 +190,13 @@ a:hover
     flex-wrap: wrap;
 } */
 
-.about .grid li.card
+/* .about .grid li.card
 {
     flex-basis: 33%;
     margin: auto; 
-}
+} */
 
-.about .grid li p
+/* .about .grid li p
 {
     margin: 0;
 }
@@ -201,7 +206,7 @@ a:hover
     color: #003C68;
     font-size: 20px;
     margin-bottom: 25px;
-}
+} */
 
 .about h5
 {
@@ -228,15 +233,18 @@ a:hover
     }
 } */
 
-@media (min-width: 768px)
+
+/* TODO: Why is this activating on smaller screen widths? */
+
+@media only screen and (min-width: 768px)
 {
-    /* .about .flex-container li
+    .flex-horizon
     {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
-        flex-basis: 33%;
-        text-align: center;
-    } */
+        padding: 1rem;
+        width: auto;
+    }
 }
 
 .footer
@@ -289,22 +297,11 @@ figcaption
     text-align: center;
 }
 
-figure
-{
-    object-fit: fill;
-    border: blue dashed 2px;
-}
-
-@media only screen and (max-width: 1000px) 
+/* @media only screen and (max-width: 1000px) 
 {
     .header
     {
         padding: 20px 50px;
-    }
-    .basicImage 
-    {
-        width: 100%;
-        height: auto;
     }
 }
 
@@ -315,12 +312,8 @@ figure
         flex-direction: column;
     }
 
-    .header img{
+    .header img
+    {
         margin-bottom: 15px;
     }
-
-    .basicImage {
-        width: 600px;
-        height: 500px;
-    }
-}
+} */
