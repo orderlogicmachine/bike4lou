@@ -43,6 +43,7 @@ body
     min-height: 100vh;
     font-family: Helvetica, 'Segoe IU', sans-serif;
     text-align: center;
+    width: 100%;
 }
 
 a
@@ -84,6 +85,7 @@ a:hover
 .header nav
 {
     display: flex;
+    justify-content: space-around;
 }
 
 .header nav li
@@ -107,7 +109,7 @@ a:hover
     background-color: transparent;
     position: relative;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
     color: white;
 }
 
@@ -117,7 +119,7 @@ a:hover
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60vh;
     z-index: -1;
     background-size: cover;
     background-color: #1A77C1;
@@ -131,7 +133,7 @@ a:hover
     top: 0; 
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60vh;
     background-color: #414A4F;
     opacity: 0.4;
 }
@@ -164,24 +166,29 @@ a:hover
     background-color: #E5EBEF;
 }
 
-.about .grid li
+.flex-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .about .grid li
 {
     padding: 20px;
-    height: 300px;
+    height: 300px; 
     background-clip: content-box;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #333;
-    /* display: flex;
-    flex-direction: row; */
-    /* flex-basis: 33%;
-    text-align: center; */
-}
+    flex-basis: 100%;
+    flex-wrap: wrap;
+} */
 
-.about .grid li.gridTile
+.about .grid li.card
 {
     flex-basis: 33%;
+    margin: auto; 
 }
 
 .about .grid li p
@@ -196,7 +203,12 @@ a:hover
     margin-bottom: 25px;
 }
 
-@media (max-width: 1000px)
+.about h5
+{
+    padding: 1rem 10%;
+}
+
+/* @media (max-width: 1000px)
 {
     .about .grid li{
         flex-basis: 100%;
@@ -214,6 +226,17 @@ a:hover
     {
         flex-basis: 100%;
     }
+} */
+
+@media (min-width: 768px)
+{
+    /* .about .flex-container li
+    {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 33%;
+        text-align: center;
+    } */
 }
 
 .footer
