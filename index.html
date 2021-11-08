@@ -15,7 +15,7 @@
 <body>
     <main class="grid-wrap">
         <div class="header">
-            <img src="img/b4lLogo.png" title="B4L Logo" alt="B4L Logo">
+            <img class="logo" src="img/b4lLogo.png" title="B4L Logo" alt="B4L Logo">
             <nav>
                 <li>Mission</li>
                 <li>News</li>
@@ -30,12 +30,14 @@
             <h1>MAKING MORE BIKE RIDERS IN KENTUCKIANA</h1>
         </section>
         <section id="about" class="about">
-            <h5>We strive to get more people riding bicycles in Kentuckiana, using a three-pronged approach:</h5>
+            <p>We strive to get more people riding bicycles in Kentuckiana, using a three-pronged approach:</p>
 
             <!-- TODO: Maybe just nuke this and do it in normal FlexBox like a sane person? -->
             <!-- Maybe with @media breaks to force switching from 3 columns to 1? -->
 
-            <ul class="flex-container flex-horizon">
+            <!-- The above is mostly done, but the media query is still active on all widths -->
+
+            <ul class="flex-container flex-row">
                 <li class="card">
                     <img src="img/cycleTrack.jpg" title="Cycle track with green painted lines"
                         alt="Cycle track with green painted lines">
@@ -61,7 +63,7 @@
         </section>
         <section id="News">
             <h3>Latest News</h3>
-            <ul class="flex-container flex-horizon">
+            <ul class="flex-container flex-row">
                 <li class="card">
                     <img src="img/protectedLane.jpg" alt="">
                     <h4>Parking-Protected Lanes Coming to Louisville</h4>
@@ -80,7 +82,7 @@
                 </li>
             </ul>
         </section>
-        <section class="flex-container">
+        <section class="flex-row">
             <figure class="card">
                 <img src="img/bikeLane1.jpeg" title="Dutch bike lane" alt="Dutch bike lane" class="grid">
                 <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
