@@ -1,3 +1,5 @@
+/* Page Defaults */
+
 * 
 {
     margin: 0;
@@ -5,6 +7,8 @@
     box-sizing: border-box;
     width: 100%;
 }
+
+/* Previously-used prototype CSS grid stuff */
 
 /* .grid-wrap
 {
@@ -67,6 +71,8 @@ a:hover
     justify-content: center;
 } */
 
+/* Header */
+
 .header
 {
     margin-bottom: 4rem;
@@ -109,6 +115,8 @@ a:hover
 {
     max-width: 150px;
 }
+
+/* Hero */
 
 .hero
 {
@@ -167,10 +175,29 @@ a:hover
     }
 } */
 
+/* About */
+
 .about
 {
     background-color: #E5EBEF;
 }
+
+.about h3
+{
+    color: #003c68;
+    font-size: calc((2.5 - 1) * 1.2vh + 1rem);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.about p
+{
+    /* display: block; */
+    padding: 2rem 10%;
+    font-size: 12px;
+}
+
+/* Flex Specs */
 
 .flex-container
 {
@@ -215,21 +242,6 @@ a:hover
     margin-bottom: 25px;
 } */
 
-.about h3
-{
-    color: #003c68;
-    font-size: calc((2.5 - 1) * 1.2vh + 1rem);
-    line-height: 1.3;
-    font-weight: 700;
-}
-
-.about p
-{
-    /* display: block; */
-    padding: 2rem 10%;
-    font-size: 12px;
-}
-
 /* @media (max-width: 1000px)
 {
     .about .grid li{
@@ -264,7 +276,9 @@ a:hover
     }
 }
 
-.footer
+/* Footer */
+
+footer
 {
     display: flex;
     flex-direction: column;
@@ -275,29 +289,30 @@ a:hover
     align-items: center;
 }
 
-.footer h2, p
+footer h2, p
 {
     padding-bottom: 1rem;
 }
 
-.footer ul
+footer ul
 {
     display: flex;
+    flex-direction: row;
     margin-bottom: 25px;
     font-size: 16px;
 }
 
-.footer ul li
+footer ul li
 {
     margin: 0 8px;
 }
 
-.footer ul li:first-child
+footer ul li:first-child
 {
     margin-left: 0;
 }
 
-.footer ul li:last-child
+footer ul li:last-child
 {
     margin-right: 0;
 }
