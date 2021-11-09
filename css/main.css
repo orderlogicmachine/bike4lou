@@ -50,18 +50,7 @@ body
     text-align: center;
 }
 
-a
-{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    opacity: 1;
-}
 
-a:hover
-{
-    opacity: 0.9;
-}
 
 /* ul.grid
 {
@@ -73,7 +62,7 @@ a:hover
 
 /* Header */
 
-.header
+#header
 {
     margin-bottom: 4rem;
     background-color: #E5EBEF;
@@ -85,40 +74,71 @@ a:hover
     align-items: center;
     padding: 35px 8% 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;    
+    overflow: hidden;
+    /* position: relative; */
 }
 
-.header nav
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header nav li
-{
-    font-size: 20px;
-    flex: 1;
-}
-
-.header nav li:first-child
-{
-    margin-left: 0;
-}
-
-.header nav li:last-child
-{
-    margin-right: 0;
-}
-
-.logo
+#header .logo
 {
     max-width: 150px;
 }
 
+#header .i
+{
+    align-self: right;
+
+}
+
+#header .icon
+{
+    font-size: 64px;
+    color: #003C68;
+    width: 64px;
+    margin: 2rem;
+}
+
+#navLinks
+{
+    display: none;
+}
+
+#header nav a
+{
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: 500;
+    display: block;
+}
+
+#header a.icon
+{
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav a:hover
+{
+    background-color: #DDD;
+    color: black;
+}
+
+/* May be unnecessary for project scope */
+
+/* .active
+{
+    background-color: transparent;
+    color: white;
+} */
+
 /* Hero */
 
-.hero
+#hero
 {
     background-color: transparent;
     position: relative;
@@ -127,7 +147,7 @@ a:hover
     color: white;
 }
 
-.hero .background-image
+#hero .background-image
 {
     position: absolute;
     top: 0;
@@ -140,7 +160,7 @@ a:hover
     background-position: left;
 }
 
-.hero .background-image:after
+#hero .background-image:after
 {
     content: '';
     position: absolute;
@@ -152,7 +172,7 @@ a:hover
     opacity: 0.4;
 }
 
-.hero h1
+#hero h1
 {
     font: bold 60px;
     font-size: 54px;
@@ -164,12 +184,12 @@ a:hover
 
 /* @media(max-width: 800px) 
 {
-    .hero
+    #hero
     {
         min-height: 600px;
     }
 
-    .hero h1
+    #hero h1
     {
         font-size: 36px;
     }
@@ -177,12 +197,12 @@ a:hover
 
 /* About */
 
-.about
+#about
 {
     background-color: #E5EBEF;
 }
 
-.about h3
+#about h3
 {
     color: #003c68;
     font-size: calc((2.5 - 1) * 1.2vh + 1rem);
@@ -190,11 +210,11 @@ a:hover
     font-weight: 700;
 }
 
-.about p
+#about p
 {
     /* display: block; */
     padding: 2rem 10%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Flex Specs */
@@ -211,7 +231,7 @@ a:hover
     flex: 1;
 }
 
-/* .about .grid li
+/* #about .grid li
 {
     padding: 20px;
     height: 300px; 
@@ -224,18 +244,18 @@ a:hover
     flex-wrap: wrap;
 } */
 
-/* .about .grid li.card
+/* #about .grid li.card
 {
     flex-basis: 33%;
     margin: auto; 
 } */
 
-/* .about .grid li p
+/* #about .grid li p
 {
     margin: 0;
 }
 
-.about .grid li h4
+#about .grid li h4
 {
     color: #003C68;
     font-size: 20px;
@@ -244,11 +264,11 @@ a:hover
 
 /* @media (max-width: 1000px)
 {
-    .about .grid li{
+    #about .grid li{
         flex-basis: 100%;
         margin-bottom: 65px;
     }
-    .about .grid li:last-child
+    #about .grid li:last-child
     {
         margin-bottom: 0;
     }
@@ -256,7 +276,7 @@ a:hover
 
 @media (max-width: 600px)
 {
-    .about .grid li
+    #about .grid li
     {
         flex-basis: 100%;
     }
@@ -273,6 +293,44 @@ a:hover
         flex-direction: row;
         padding: 1rem;
         width: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px)
+{
+    #header nav
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #header nav a
+    {
+        font-size: 20px;
+        flex: 1;
+    }
+
+    #header nav a:first-child
+    {
+        margin-left: 0;
+    }
+
+    #header nav a:last-child
+    {
+        margin-right: 0;
+    }
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    a:hover
+    {
+        opacity: 0.9;
     }
 }
 
@@ -331,7 +389,7 @@ figcaption
 
 /* @media only screen and (max-width: 1000px) 
 {
-    .header
+    #header
     {
         padding: 20px 50px;
     }
@@ -339,12 +397,12 @@ figcaption
 
 @media only screen and (max-width: 700px) 
 {
-    .header
+    #header
     {
         flex-direction: column;
     }
 
-    .header img
+    #header img
     {
         margin-bottom: 15px;
     }
