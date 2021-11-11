@@ -126,9 +126,23 @@
     </main>
 
     <footer>
-        <h2>Stay in the Loop</h2>
-        <p>Get notified of what we're up to and of great bike-related events happening all around the Louisville area
-        </p>
+
+        <form action="action_page.php">
+            <div class="newsletterPad">
+                <h2>Stay in the Loop!</h2>
+                <p>Get notified of what we're up to and of great bike-related events happening all around the Louisville
+                    area:
+                </p>
+            </div>
+
+            <div class="emailField">
+                <input type="text" placeholder="Email address" name="mail" required>
+            </div>
+
+            <div id="signUpButton">
+                <input class="submitButton" type="submit" value="Sign Up">
+            </div>
+        </form>
         <ul>
             <li><i class="fab fa-facebook-f"></i></li>
             <li><i class="fab fa-twitter"></i></li>

@@ -376,6 +376,47 @@ footer ul li:last-child
     margin-right: 0;
 }
 
+  .newsletterPad
+  {
+    padding: 0 10% 20px 10%;
+    background-color: #003C68;
+  }
+
+  .emailField
+  {
+    padding: 0 10% 10px 10%;
+  }
+
+  #signUpButton
+  {
+    padding: 0 10% 60px 10%;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit]
+  {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit]
+  {
+    background-color: #bd9901;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover
+  {
+    opacity: 0.8;
+  }
+
 /* nav > ul 
 {
     display: flex;
