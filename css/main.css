@@ -400,6 +400,7 @@ footer ul li:last-child
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    min-height: 44px;
     /* border-radius: 4px; */
   }
   
