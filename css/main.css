@@ -392,7 +392,7 @@ footer ul li:last-child
     padding: 0 10% 60px 10%;
   }
   
-  input[type=text], input[type=submit]
+  input[type=text], input[type=button]
   {
     width: 100%;
     padding: 12px;
@@ -404,7 +404,7 @@ footer ul li:last-child
     /* border-radius: 4px; */
   }
   
-  input[type=submit]
+  input[type=button]
   {
     background-color: #bd9901;
     color: white;
