@@ -24,6 +24,20 @@ and possibly also:
 
 #### Current Issues
 
-The main functional issue with the project is currently that the min-width media query for altering site layout for larger screens is active at all screen sizes.
+The min-width media query issue is now fixed!
+
+Remaining items:
+
+- Set dynamic font rules for at least the header H1 (which now overflows the header background image)
+
+- Add newsletter signup form box to footer
+
+- Add JS validation of newsletter email address
+
+- Style footer
+
+- Fix alignment in header
+
+- Flesh out largest media query
 
 **Thank you for visiting!**

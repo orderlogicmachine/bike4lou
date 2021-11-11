@@ -81,12 +81,14 @@ body
 
 #header .logo
 {
-    max-width: 150px;
+    max-width: 10vh;
+    min-width: 44px;
 }
 
 #header .i
 {
     align-self: right;
+    min-width: 44px;
 
 }
 
@@ -108,7 +110,7 @@ body
     color: black;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 44px;
+    font-size: clamp(24px, 1rem + 2vw, 44px);
     font-weight: 500;
     display: block;
 }
@@ -143,7 +145,7 @@ nav a:hover
     background-color: transparent;
     position: relative;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 60vh;
     color: white;
 }
 
@@ -153,7 +155,7 @@ nav a:hover
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     z-index: -1;
     background-size: cover;
     background-color: #1A77C1;
@@ -167,16 +169,15 @@ nav a:hover
     top: 0; 
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: #414A4F;
     opacity: 0.4;
 }
 
 #hero h1
 {
-    font: bold 60px;
-    font-size: 54px;
-    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: clamp(28px, 1rem + 2vw, 60px);
     position: absolute;
     top: 80%;
     width: 100%;
