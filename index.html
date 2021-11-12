@@ -68,7 +68,13 @@
                 </li>
             </ul>
         </div>
-        <div id="News">
+        <div id="bikeShare">
+            <p>
+                Need a bike? Don't like having to find parking? 
+                <a href="https://louvelo.com/pricing/">Check out LouVelo →</a>
+            </p>
+        </div>
+        <div id="news">
             <h3>Latest News</h3>
             <ul class="flex-container flex-row">
                 <li class="card">
@@ -127,32 +133,37 @@
 
     <footer>
 
-        <form name="signUp" action="#">
-            <div class="newsletterPad">
-                <h2>Stay in the Loop!</h2>
-                <p>Get notified of what we're up to and of great bike-related events happening all around the Louisville
-                    area:
-                </p>
-            </div>
+        <div class="flexLeft">
+            <form name="signUp" action="#">
+                <div class="newsletterPad">
+                    <h2>&#9993; Stay in the Loop!</h2>
+                    <p>Get notified of what we're up to and of great bike-related events happening all around the
+                        Louisville
+                        area:
+                    </p>
+                </div>
 
-            <div class="emailField">
-                <input type="text" inputmode="email" placeholder="Email address" name="mail" required>
-            </div>
+                <div class="emailField">
+                    <input type="text" inputmode="email" placeholder="Email address" name="mail" required>
+                </div>
 
-            <div id="signUpButton">
-                <input class="submitButton" type="button" value="Sign Up" onclick="ValidateEmail(mail)">
-            </div>
-        </form>
-        <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-        </ul>
-        <ul>
-            <li>Our Sponsors</li>
-            <li>Contact</li>
-            <li>About</li>
-        </ul>
+                <div id="signUpButton">
+                    <input class="submitButton" type="button" value="Sign Up" onclick="ValidateEmail(mail)">
+                </div>
+            </form>
+        </div>
+        <div class="flexRight">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+            <ul>
+                <li>Our Sponsors</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
     </footer>
 
 </body>
