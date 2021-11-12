@@ -159,7 +159,7 @@ nav a:hover
     z-index: -1;
     background-size: cover;
     background-color: #1A77C1;
-    background-position: left;
+    background-position: 5% 50%;
 }
 
 #hero .background-image:after
@@ -179,7 +179,7 @@ nav a:hover
     font-weight: bold;
     font-size: clamp(28px, 1rem + 2vw, 60px);
     position: absolute;
-    top: 80%;
+    top: 75%;
     width: 100%;
 }
 
@@ -224,7 +224,7 @@ nav a:hover
 
 #bikeShare p
 {
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
 }
 
 #bikeShare a
@@ -246,8 +246,28 @@ nav a:hover
     font-size: calc((2.5 - 1) * 1.2vh + 1rem);
     line-height: 1.3;
     font-weight: 700;
-    padding-top: 1rem;
+    padding: 2rem 0 1rem 0;
     left: 30%;
+}
+
+#news a
+{
+    color: #FED00D;
+    text-decoration: none;
+}
+
+#news img
+{
+    max-width: 200px;
+}
+
+#news p{
+    padding: 0.5rem 15%;
+}
+
+#news li:last-child
+{
+    padding-bottom: 2rem;
 }
 
 /* Flex Specs */
@@ -328,6 +348,11 @@ footer
     align-items: center;
 }
 
+footer .flexRight
+{
+    padding: 0 2rem;
+}
+
 footer h2, p
 {
     padding-bottom: 1rem;
@@ -339,6 +364,7 @@ footer ul
     flex-direction: row;
     margin-bottom: 25px;
     font-size: 16px;
+    align-items: center;
 }
 
 footer ul li
@@ -402,12 +428,6 @@ footer ul li:last-child
     justify-content: space-around;
 } */
 
-figcaption
-{
-    padding: 1rem;
-    text-align: center;
-}
-
 /* @media only screen and (max-width: 1000px) 
 {
     #header
@@ -456,6 +476,26 @@ p
     {
         font-size: 24px;
     }
+
+    .flex-wrap
+    {
+        flex-wrap: wrap;
+        margin: 0 10% 0 10%;
+    }
+
+    #hero .background-image{
+        background-position: center;
+    }
+
+    #news .card
+    {
+        flex: 50%;
+    }
+
+    #news a
+    {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 1024px)
@@ -498,5 +538,10 @@ p
     .fa
     {
         display: none;
+    }
+
+    #news .card
+    {
+        flex: 33.3333%;
     }
 }
