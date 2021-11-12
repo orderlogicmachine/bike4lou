@@ -132,11 +132,11 @@ nav a:hover
 
 /* May be unnecessary for project scope */
 
-/* .active
+.active
 {
     background-color: transparent;
     color: white;
-} */
+}
 
 /* Hero */
 
@@ -183,19 +183,6 @@ nav a:hover
     width: 100%;
 }
 
-/* @media(max-width: 800px) 
-{
-    #hero
-    {
-        min-height: 600px;
-    }
-
-    #hero h1
-    {
-        font-size: 36px;
-    }
-} */
-
 /* About */
 
 #about
@@ -233,6 +220,11 @@ nav a:hover
     font-weight: bold;
 }
 
+#bikeShare a:hover
+{
+    color: #FED00D;
+}
+
 /* News */
 
 #news
@@ -252,8 +244,13 @@ nav a:hover
 
 #news a
 {
-    color: #FED00D;
     text-decoration: none;
+    color: white;
+}
+
+#news a:hover
+{
+    color: #FED00D;
 }
 
 #news img
@@ -284,57 +281,6 @@ nav a:hover
     flex: 1;
 }
 
-/* #about .grid li
-{
-    padding: 20px;
-    height: 300px; 
-    background-clip: content-box;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #333;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-} */
-
-/* #about .grid li.card
-{
-    flex-basis: 33%;
-    margin: auto; 
-} */
-
-/* #about .grid li p
-{
-    margin: 0;
-}
-
-#about .grid li h4
-{
-    color: #003C68;
-    font-size: 20px;
-    margin-bottom: 25px;
-} */
-
-/* @media (max-width: 1000px)
-{
-    #about .grid li{
-        flex-basis: 100%;
-        margin-bottom: 65px;
-    }
-    #about .grid li:last-child
-    {
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 600px)
-{
-    #about .grid li
-    {
-        flex-basis: 100%;
-    }
-} */
-
 /* Footer */
 
 footer
@@ -350,7 +296,7 @@ footer
 
 footer .flexRight
 {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 footer h2, p
@@ -458,6 +404,11 @@ p
 
 @media only screen and (min-width: 768px)
 {
+    #about p
+    {
+        font-size: 18px;
+    }
+
     .flex-row
     {
         display: flex;
@@ -500,6 +451,11 @@ p
 
 @media only screen and (min-width: 1024px)
 {
+    #bikeShare p
+    {
+        font-size: 20px;
+    }
+
     #header nav
     {
         display: flex;
@@ -513,6 +469,12 @@ p
         flex: 1;
     }
 
+    #header nav a:hover
+    {
+        color: #FED00D;
+        background-color: transparent;
+    }
+
     #header nav a:first-child
     {
         margin-left: 0;
@@ -522,12 +484,10 @@ p
     {
         margin-right: 0;
     }
-    a
+    
+    #hero h1
     {
-        text-decoration: none;
-        color: inherit;
-        cursor: pointer;
-        opacity: 1;
+        top: 80%;
     }
 
     a:hover
