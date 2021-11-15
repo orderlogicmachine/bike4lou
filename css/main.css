@@ -525,11 +525,10 @@ p
     footer .footLinks
     {
         font-size: 20px;
-        padding: 1.5rem;
     }
 
-    footer .icons
+    footer a
     {
-        font-size: 44px;
+        padding: 1rem;
     }
 }
