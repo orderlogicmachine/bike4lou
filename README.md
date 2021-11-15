@@ -10,7 +10,7 @@ This project is intended to replicate the structure and basic features of an exi
 
 #### Features
 
-I intend to implement the following features:
+I have implemented the following features:
 
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 
@@ -18,26 +18,12 @@ I intend to implement the following features:
 
 - Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow
 
-and possibly also:
-
 - Use “:nth-child” or “nth-of-type” to style a series of elements on your page
 
 #### Current Issues
 
-The min-width media query issue is now fixed!
-
-Remaining items:
-
-- Set dynamic font rules for at least the header H1 (which now overflows the header background image)
-
-- Add newsletter signup form box to footer
-
-- Add JS validation of newsletter email address
-
-- Style footer
-
 - Fix alignment in header
 
-- Flesh out largest media query
+- Clean up hamburger menu behavior on small screens
 
 **Thank you for visiting!**
