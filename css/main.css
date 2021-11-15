@@ -363,9 +363,10 @@ footer ul li:last-child
     border: none;
   }
   
-  input[type=submit]:hover
+  input[type=button]:hover
   {
     opacity: 0.8;
+    cursor: pointer;
   }
 
 /* nav > ul 
@@ -451,9 +452,19 @@ p
 
 @media only screen and (min-width: 1024px)
 {
+    a:hover
+    {
+        color: #FED00D;
+    }
+
     #bikeShare p
     {
         font-size: 20px;
+    }
+
+    #header .active
+    {
+        max-width: 200px;
     }
 
     #header nav
@@ -466,7 +477,6 @@ p
     #header nav a
     {
         font-size: 20px;
-        flex: 1;
     }
 
     #header nav a:hover
@@ -503,5 +513,13 @@ p
     #news .card
     {
         flex: 33.3333%;
+    }
+
+    footer a
+    {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 1.5rem;
     }
 }
