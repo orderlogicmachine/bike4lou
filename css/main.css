@@ -294,6 +294,12 @@ footer
     align-items: center;
 }
 
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
 footer .flexRight
 {
     padding: 0 1rem;
@@ -518,8 +524,6 @@ p
     footer a
     {
         font-size: 20px;
-        text-decoration: none;
-        color: white;
         padding: 1.5rem;
     }
 }
