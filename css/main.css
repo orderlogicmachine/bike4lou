@@ -436,11 +436,6 @@ p
         flex-direction: row;
     }
 
-    .fab
-    {
-        font-size: 24px;
-    }
-
     .flex-wrap
     {
         flex-wrap: wrap;
@@ -527,9 +522,14 @@ p
         flex: 33.3333%;
     }
 
-    footer a
+    footer .footLinks
     {
         font-size: 20px;
         padding: 1.5rem;
+    }
+
+    footer .icons
+    {
+        font-size: 44px;
     }
 }
