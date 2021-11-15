@@ -305,6 +305,11 @@ footer .flexRight
     padding: 0 1rem;
 }
 
+footer .icons
+{
+    font-size: 44px;
+}
+
 footer h2, p
 {
     padding-bottom: 1rem;
@@ -321,7 +326,7 @@ footer ul
 
 footer ul li
 {
-    margin: 0 8px;
+    margin: 8px;
 }
 
 footer ul li:first-child
@@ -414,6 +419,7 @@ p
     #about p
     {
         font-size: 18px;
+        padding: 1rem 5%;
     }
 
     .flex-row
