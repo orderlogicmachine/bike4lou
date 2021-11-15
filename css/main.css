@@ -72,7 +72,7 @@ body
     width: 100%;
     z-index: 10;
     align-items: center;
-    padding: 35px 8% 20px;
+    padding: 25px 8% 20px;
     display: flex;
     justify-content: space-around;    
     overflow: hidden;
@@ -97,7 +97,7 @@ body
     font-size: 64px;
     color: #003C68;
     width: 64px;
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 #navLinks
@@ -120,7 +120,7 @@ body
     background: transparent;
     display: block;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
 }
 
