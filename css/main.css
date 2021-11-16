@@ -113,6 +113,7 @@ body
     font-size: clamp(24px, 1rem + 2vw, 44px);
     font-weight: 500;
     display: block;
+    transition: 0.2s;
 }
 
 #header a.icon
@@ -136,6 +137,7 @@ nav a:hover
 {
     background-color: transparent;
     color: white;
+    transition: 0.2s;
 }
 
 /* Hero */
@@ -246,6 +248,7 @@ nav a:hover
 {
     text-decoration: none;
     color: white;
+    transition: 0.2s;
 }
 
 #news a:hover
@@ -298,6 +301,7 @@ footer a
 {
     color: white;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 footer .flexRight
@@ -372,6 +376,7 @@ footer ul li:last-child
     background-color: #bd9901;
     color: white;
     border: none;
+    transition: 0.2s;
   }
   
   input[type=button]:hover
