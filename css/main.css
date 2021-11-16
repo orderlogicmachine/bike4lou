@@ -527,6 +527,11 @@ p
         flex: 33.3333%;
     }
 
+    .card img
+    {
+        max-width: 600px;
+    }
+
     footer .footLinks
     {
         font-size: 20px;
